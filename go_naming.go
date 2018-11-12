@@ -70,7 +70,7 @@ func (t *twirp) goFileName(f *descriptor.FileDescriptorProto) string {
 	if ext := path.Ext(name); ext == ".proto" || ext == ".protodevel" {
 		name = name[:len(name)-len(ext)]
 	}
-	name += "_stub.twirp.go"
+	name += ".twirp.stub.go"
 	if t.sourceRelativePaths {
 		return name
 	}

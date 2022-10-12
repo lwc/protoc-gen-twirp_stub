@@ -51,8 +51,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
+	descriptor "google.golang.org/protobuf/types/descriptorpb"
+	plugin "google.golang.org/protobuf/types/pluginpb"
+
 	"github.com/lwc/protoc-gen-twirp_stub/gen/stringutils"
 )
 
